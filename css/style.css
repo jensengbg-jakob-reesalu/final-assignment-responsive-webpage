@@ -8,8 +8,8 @@ body {
     margin: 0;
     display: grid;
     grid-auto-rows: auto;
-    grid-template-areas: "header header header header" 
-                         "top-nav top-nav top-nav top-nav "
+    grid-template-areas: "top-nav top-nav top-nav top-nav "
+                         "header header header header" 
                          "main main main main"
                          "footer footer footer footer ";
 }
@@ -23,33 +23,39 @@ header {
     background-color: #96ceb4;
 }
 
-header article {
-    background-image: url(../img/beach-banner.jpg);
-    background-repeat: no-repeat;
+.header-article {
+    background-image: url(../img/intro.jpg);
     background-size: cover;
-    height: 20rem;
+    background-repeat: no-repeat;
 }
 
-header h1 {
-    margin: 2rem 2rem 0 2rem;
-    min-width: 20rem;
-    text-align: center;
-    font-size: 3rem;
-    color: ghostwhite;
-    background: linear-gradient(#ffcc5c 30%, #88d8b0, #ff6f69);
-    border-radius: 1000px;
-    border: 7px solid ghostwhite;
-    
+.header-article h2 {
+    font-family: "Abril Fatface";
+    font-size: 7rem;
+    margin: 1rem 3rem;
+    color: #ff6f69;
+    text-shadow: 2px 2px #ffeead;
 }
+
+.header-article p {
+    margin: 15px 30px;
+    color: ghostwhite;
+    text-shadow: 2px 2px black;
+    font-size: 2rem;
+    font-family: fantasy;
+    line-height: 3rem;
+}
+
+
 
 .top-nav {
     grid-area: top-nav;
     background-color: #96ceb4;
 }
 
+
 ul {
     display: flex;
-    justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,16 +64,36 @@ ul {
 ul li {
     flex: 1;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 3.5rem;
+}
+
+.nav-logo {
+    min-width: 20rem;
+    margin-right: auto;
+    text-align: center;
+    font-size: 3rem;
+    color: ghostwhite;
+    background: linear-gradient(#ffcc5c 30%, #88d8b0, #ff6f69);
+    border-radius: 1000px;
+    border: .3rem solid ghostwhite;
 }
 
 ul a {
     flex: 1;
-    padding: 1rem;
+    height: 100%;
     text-align: center;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     font-size: 15px;
+}
+
+ul a:first-child {
+    margin-left: auto;
 }
 
 /* --------------- Main ---------------  */
@@ -78,35 +104,9 @@ main {
     background-color: #ffeead;
 }
 
-.intro-article {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    background-color: #88d8b0;
-    border-radius: 10px;
-    border: 5px solid white;
-    background-image: url(../img/intro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.intro-article h2 {
-    font-family: "Abril Fatface";
-    font-size: 7rem;
-    margin: 1rem 3rem;
-    color: #ff6f69;
-    text-shadow: 2px 2px #ffeead;
-}
 
-.intro-article p {
-    margin: 15px 30px;
-    color: ghostwhite;
-    text-shadow: 2px 2px black;
-    font-size: 2rem;
-    font-family: fantasy;
-    line-height: 3rem;
-}
-
+/* Hotel-articles */
 .hotel-articles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -138,29 +138,31 @@ main {
 .hotel-articles h3 {
     font-family: "Abril Fatface";
     color: #ff6f69;
-    text-shadow: 2px 2px #ffeead;
-    font-size: 30px;
-    margin: 15px 15px;
+    text-shadow: 0.16rem 0.16rem #ffeead;
+    font-size: 2.3rem;
+    margin: 1rem 1rem;
+
 }
 
 .hotel-articles p {
-    margin: 0 15px;
+    margin: 0 2rem 1rem 2rem;
     color: ghostwhite;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: fantasy;
-    line-height: 30px;
+    line-height: 2.3rem;
 }
 
 .hotel-articles button {
     align-self: flex-end;
-    margin: auto 20px 20px 0;
-    padding: 1rem;
-    font-size: 15px;
-    color: ghostwhite;
+    margin: auto 1.5rem 1.5rem 0;
     width: 50%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: ghostwhite;
     background-color: gold;
-    border: 4px solid ghostwhite;
-    border-radius: 300px;
+    border: .2rem solid ghostwhite;
+    border-radius: 300rem;
 }
 
 .hotel-img-one {
@@ -210,3 +212,34 @@ footer {
 }
 
  */
+
+
+ /* Intro-article
+.intro-article {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: #88d8b0;
+    border-radius: 10px;
+    border: 5px solid white;
+    background-image: url(../img/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro-article h2 {
+    font-family: "Abril Fatface";
+    font-size: 7rem;
+    margin: 1rem 3rem;
+    color: #ff6f69;
+    text-shadow: 2px 2px #ffeead;
+}
+
+.intro-article p {
+    margin: 15px 30px;
+    color: ghostwhite;
+    text-shadow: 2px 2px black;
+    font-size: 2rem;
+    font-family: fantasy;
+    line-height: 3rem;
+} */
