@@ -155,19 +155,14 @@ ul a {
 }
 
 .logo {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-    margin: 1rem auto 0 1rem;
-    width: 35%;
-    font-size: 2rem;
-    text-align: center;
-    color: ghostwhite;
-    text-shadow: 2px 2px black;
-    border: .3rem solid ghostwhite;
-    background-color: rgba(255, 255, 255, 0.35);    
+    width: 23%;
+    margin: -2% 0 0 3%;
 }
 
-
-
+.logo p {
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255);    
+}
 
 .logo div {
     position: absolute;
@@ -181,15 +176,18 @@ ul a {
 }
 
 .header-article h2 {
+    max-width: 83%;
     font-family: "Abril Fatface";
-    font-size: 3rem;
-    margin: 1rem 3rem;
+    font-size: 3.6rem;
+    margin: 4% 0 auto 5%;
     color: #ff6f69;
     text-shadow: 2px 2px #ffeead;
+
 }
 
-.header-article p {
-    margin: 15px 30px;
+.header-article > p {
+    max-width: 80%;
+    margin: 1rem auto;
     color: ghostwhite;
     text-shadow: 2px 2px black;
     font-size: 1.6rem;
@@ -312,64 +310,36 @@ footer {
     background-color: #ff6f69;
 }
 
+@media screen and (min-width: 590px) {
+    .logo {
+        width: 17%;
+    }
 
-
-
-
-/* Beach Color Palette */
-/* .color-palette {
-    display: flex;
-}
-.color-palette section {
-    height: 10rem;
-    flex: 1;
-}
-
-.color-palette .c1 {
-    background-color: #96ceb4;	
-}
-.color-palette .c2 {
-    background-color:#ffeead;	
-}
-.color-palette .c3 {
-    background-color:#ff6f69;	
-}
-.color-palette .c4 {
-    background-color:#ffcc5c;	
-}
-.color-palette .c5 {
-    background-color:#88d8b0;	
+    .header-article h2 {
+        max-width: 81%;
+        font-size: 4.8rem;
+        margin: -1% 0 auto 5%;
+    }
+    
 }
 
- */
-
-
- /* Intro-article
-.intro-article {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    background-color: #88d8b0;
-    border-radius: 10px;
-    border: 5px solid white;
-    background-image: url(../img/intro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (min-width: 834px) {
+    .header-article h2 {
+        max-width: 79%;
+        font-size: 5.6rem;
+        margin: -1% 0 auto 5%;
+    }
 }
 
-.intro-article h2 {
-    font-family: "Abril Fatface";
-    font-size: 7rem;
-    margin: 1rem 3rem;
-    color: #ff6f69;
-    text-shadow: 2px 2px #ffeead;
-}
 
-.intro-article p {
-    margin: 15px 30px;
-    color: ghostwhite;
-    text-shadow: 2px 2px black;
-    font-size: 2rem;
-    font-family: fantasy;
-    line-height: 3rem;
-} */
+@media screen and (min-width: 1129px) {
+    .logo {
+        width: 12%;
+    }
+
+    .header-article h2 {
+        max-width: 59%;
+        font-size: 7rem;
+        margin: -1% 0 auto 5%;
+    }
+}
