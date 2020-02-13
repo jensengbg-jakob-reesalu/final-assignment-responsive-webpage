@@ -192,7 +192,6 @@ ul a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    
 }
 
 .logo-hamburger {
@@ -230,7 +229,6 @@ ul a {
     color: #ff6f69;
     text-shadow: 2px 2px #ffeead;
     line-height: 110%;
-
 }
 
 .header-article > p {
@@ -255,15 +253,18 @@ ul a {
 }
 
 .chevron-down a {
-    margin-bottom: -1rem;
-    padding: 1rem;
+    height: 100%;
+    width: 100%;
     color: ghostwhite;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
 }
 
+.chevron-wrapper {
+    height: 100%;
+}
+
 .chevron {
-    margin-bottom: 1rem;
     border-right: .1rem solid ghostwhite;
     border-bottom: .1rem solid ghostwhite;
     width: 1rem;
