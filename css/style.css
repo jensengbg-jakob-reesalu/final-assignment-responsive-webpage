@@ -365,6 +365,7 @@ footer {
 @media screen and (min-width: 834px) {
     .nav-toggler, .hamburger, .logo-hamburger {
         visibility: hidden;
+        position: absolute;
     }
 
     .logo-navbar {
@@ -445,7 +446,7 @@ footer {
     .header-article h2 {
         max-width: 75%;
         font-size: 5.4rem;
-        margin: -2% 0 auto 5%;
+        margin: 3% 0 auto 5%;
     }
 }
 
@@ -457,6 +458,6 @@ footer {
     .header-article h2 {
         max-width: 61%;
         font-size: 6.7rem;
-        margin: -1% 0 auto 5%;
+        margin: 3% 0 auto 5%;
     }
 }
