@@ -359,10 +359,48 @@ main {
     background-image: url(../img/hotel-three.jpg);
 }
 
+
+/* --------------- Footer ---------------  */
 footer {
     grid-area: footer;
-    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: #ff6f69;
+    border-top: 3px solid #96ceb4;
+    border-bottom: 2rem solid #96ceb4;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+footer h4 {
+    margin: 1rem 0 .5rem 0;
+    font-family: "Abril Fatface";
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-bottom: 2px solid ghostwhite;
+    color: #c42e29;
+}
+
+footer a {
+    color: ghostwhite;
+    font-family: "Questrial";
+    text-decoration: none;
+    line-height: 1.2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-icons i {
+    font-size: 2rem;
+    margin: .2rem;
+    color: #88d8b0;
 }
 
 
@@ -396,11 +434,10 @@ footer {
     background-color: #89ccad87;
 }
 
-
-
 .about-article {
     background-color: #96ceb4;
-    margin: 1rem;
+    margin: 1.2rem;
+    padding-bottom: 3rem;
     border-radius: 10px;
 }
 
@@ -516,8 +553,19 @@ footer {
         margin: 3% 0 auto 5%;
     }
 
+    .header-article > p {
+        max-width: 60%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
     .about-header-article h2 {
         font-size: 6rem;
+    }
+
+    ul li {
+        height: 100%;
+        margin: 0 1% 0 1%;
     }
 }
 
